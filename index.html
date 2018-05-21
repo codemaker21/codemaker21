@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>CodeMaker21 Portfolio</title>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="head">
+				<div class="logo">
+					<p>SAMUEL MONSALVE</p>
+				</div>
+				<ul>
+					<li><button id="head-btn1">Portafolio</button></li>
+					<li><button id="head-btn2">Conocimiento</button></li>
+					<li><button id="head-btn3">Acerca de mi</button></li>
+					<li><button id="head-btn4">Contacto</button></li>
+				</ul>
+			</div>
+			<div class="slogan">
+				<h2>Front-end Web Developer</h2>
+				<p>Desarrollador web front-end (un poco de back-end) con amplia experiencia en diferentes tecnologías como: HTML, CSS, JAVASCRIPT, BOOTSTRAP, PHOTOSHOP, entre otras. Todo mi conocimiento es derivado de cursos profesionales de desarrollo web e investigación autodidacta. Español como lengua nativa y nivel intermedio de inglés.</p>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="container">
+			<h3 id="portafolio" >Portafolio</h3>
+			<div class="jobs">
+				<div class="job">
+					<h4 class="title">Landing Page</h4>
+					<img src="img/simplepage.jpg" class="thumb" alt="Job preview">
+					<button id="btn1" class="modal-btn">Saber más</button>
+				</div>
+				<div class="job">
+					<h4 class="title">Archivo PSD a HTML</h4>
+					<img src="img/psd.jpg" class="thumb" alt="Job preview">
+					<button id="btn2" class="modal-btn">Saber más</button>
+				</div>
+				<div class="job">
+					<h4 class="title">Portafolio</h4>
+					<img src="img/porta.jpg" class="thumb" alt="Job preview">
+					<button id="btn3" class="modal-btn">Saber más</button>
+				</div>
+				<div class="job">
+					<h4 class="title">Pronto más...</h4>
+					<img src="img/3.jpg" class="thumb" alt="Job preview">
+					<button id="btn4" class="modal-btn">Saber más</button>
+				</div>
+			</div>
+
+			<!--MODALS-->
+			<div class="modal" id="modal-job1">
+				<div class="modal-content">
+					<span id="closeBtn">&times;</span>
+					<h4 class="modal-title">Landing Page</h4>
+					<img class="modal-img" src="img/simplepage.jpg" alt="">
+					<p class="modal-text">Una página de presentación hecha con bootstrap, incluye un menú de navegación desplegable y buscador, un carrusel del imágenes y una galería para mostrar productos. Bootstrap nos permite hacer esta página adaptable en un menor tiempo.</p>
+				</div>
+			</div>
+
+			<div class="modal" id="modal-job2">
+				<div class="modal-content">
+					<span id="closeBtn2">&times;</span>
+					<h4 class="modal-title">Archivo PSD a HTML</h4>
+					<img class="modal-img" src="img/psd.jpg" alt="">
+					<p class="modal-text">Un archivo de Photoshop convertido en código HTML y CSS, este tipo de trabajo es popular en muchas páginas freelance. Es un medio excelente para trasladar la creatividad de un diseñador a una página web funcional.</p>
+				</div>
+			</div>
+
+			<div class="modal" id="modal-job3">
+				<div class="modal-content portafolio">
+					<span id="closeBtn3">&times;</span>
+					<h4 class="modal-title">Portafolio</h4>
+					<img class="modal-img" src="img/porta.jpg" alt="">
+					<p class="modal-text portafoliotext">Un modelo de portafolio hecho en photoshop y posteriormente en html y css con FlexBox, de nuevo una combinación de estas tecnologías.</p>
+				</div>
+			</div>
+
+			<div class="modal" id="modal-job4">
+				<div class="modal-content">
+					<span id="closeBtn4">&times;</span>
+					<h4 class="modal-title">Pronto más...</h4>
+					<img class="modal-img" src="img/3.jpg" alt="">
+					<p class="modal-text">Más proyectos en camino.</p>
+				</div>
+			</div>
+
+			<h3 id="conoci">Conocimiento</h3>
+			<div class="tecs">
+				<div class="tec">
+					<h4 class="name">HTML</h4>
+					<i class="icon ht fab fa-html5"></i>
+				</div>
+				<div class="tec">
+					<h4 class="name">CSS</h4>
+					<i class="icon css fab fa-css3-alt"></i>
+				</div>
+				<div class="tec">
+					<h4 class="name">JavasScript</h4>
+					<i class="icon js fab fa-js"></i>
+				</div>
+				<div class="tec">
+					<h4 class="name">SASS</h4>
+					<i class="icon fab sass fa-sass"></i>
+				</div>
+				<div class="tec">
+					<h4 class="name">Bootstrap</h4>
+					<i class="icon bt fas fa-bold"></i>
+				</div>
+			</div>
+
+			<h3 id="acerca">Acerca de mí</h3>
+			<div class="me-container">
+				<div class="circle-img">
+					<img src="img/photo.jpg" alt="Samuel">
+				</div>
+				<div class="text">
+					<p>Mi nombre es Samuel Monsalve y soy un desarrollador web con más de 1 año de experiencia, soy de Venezuela y tengo 18 años. Mi pasión por esta área de la tecnología inicia cuando apenas soy un niño. Primero por los videojuegos ya que dedicaba bastantes horas en ellos y luego me empezó a dar curiosidad de cómo éstos eran realizados, de niño pensaba que era muy fácil crear un videojuego, pero después me di cuenta que ese pensamiento estaba bastante errado al dar mis primeros pasos en la programación.</p>
+					<br>
+					<p>Luego de mi etapa "gamer" las aplicaciones móviles captaron mi atención, en mi cabeza pensé que esta área era una oportunidad perfecta para hacer dinero ya que estaba viendo con mis propios ojos el auge de los teléfonos inteligentes. Empecé a ver vídeos de programación del lenguaje Java y tuve una de mis peores experiencias relacionada a la programación, ya que al tener unos 14 o 15 años no estaba seguro de dónde encontrar información correcta para aprender. Debido a eso, mi interés en la programación se esfumó por unos años hasta que una vez ya un poco mas mayor, decidí volver a probar y ver si era apto para esto.</p>
+					<br>
+					<p>Compré cursos online y empecé a ser autodidacta para por fin poder entender este increíble proceso de diseñar y codificar programas en una computadora. Comprendí algo importante durante todo el camino y es que en el mundo de la informática todo tiene un porqué, no hay ninguna especie de magia que haga programas o páginas web simplemente deseandolo, todo proyecto lleva cierto trabajo detrás que una persona sin muchos conocimientos de este tema no valora y creen que es sencillo pero no siempre es así. Gracias a esta experiencia ahora soy capaz de crear páginas web adaptables y seguir aprendiendo cosas nuevas que me ayudan a desarrollar mis habilidades como programador y crecer intelectualmente como persona.</p>
+				</div>
+			</div>
+
+			<h3 id="contacto">Contacto</h3>
+			<div class="social">
+				<a href="https://www.linkedin.com/in/samuel-monsalve-781131152/" class="linkedin icon"><i class="fab fa-linkedin-in"></i></a>
+				<a href="https://www.fiverr.com/codemaker18" class="fiverr icon">FIVERR</a>
+				<a href="https://www.freelancer.com/u/ThePlayMaker17" class="freelancer icon">FREELANCER</a>
+				<a href="https://www.facebook.com/samuel.monsalvedibattista" class="facebook icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>Copyright &copy; Samuel Monsalve</p>
+	</footer>
+	
+	<script src="popup.js"></script>
+</body>
+</html>

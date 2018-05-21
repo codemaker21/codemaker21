@@ -1,0 +1,184 @@
+.main
+	background: #000
+	.container
+		//PORTAFOLIO
+		h3
+			font-family: 'Poiret One', cursive
+			color: #fff
+			font-size: 1.875rem
+			margin: 1.875rem 0 1.875rem 0
+			text-align: center
+		.jobs
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			.job
+				margin: 1.875rem 0 1.875rem 0
+				padding: 1.25rem
+				background: rgba(#737373 , .3)
+				border-radius: 5px
+				.title
+					color: #fff
+					font-weight: 300
+					font-size: 1.25rem
+					padding-bottom: 1rem
+					text-align: center
+
+				.thumb
+					width: 430px
+					border-radius: 5px
+				.modal-btn
+					display: block
+					margin: 1.25rem auto
+					padding: 1.25rem
+					color: #fff
+					border: 3px solid #fff
+					border-radius: 5px
+					background: #000
+					font-weight: 700
+					text-align: center
+					text-decoration: none
+					transition: 0.3s all ease
+					cursor: pointer
+					
+				.modal-btn:hover
+					background: rgba(#fff , .3)
+					color: #000
+		//MOSTRAR TRABAJO
+		.modal
+			color: #fff
+			display: none
+			position: fixed
+			z-index: 1
+			left: 0
+			top: 0
+			height: 100%
+			width: 100%
+			overflow: hidden
+			background-color: rgba(0,0,0,0.7)
+			.modal-content
+				background-color: #000
+				margin: 8% auto
+				width: 70%
+				height: 340px
+				animation-name: modalopen
+				animation-duration: 1s
+				position: relative
+				@keyframes modalopen
+					from
+						opacity: 0
+					to
+						opacity: 1
+				span
+					cursor: pointer
+					font-size: 3.125rem
+					float: right
+					padding: 1.25rem
+				span:hover
+					background: red
+					background: rgba(#737373 , .3)
+				.modal-title
+					font-size: 1.875rem
+					margin: 1.25rem 58% 1.875rem
+					position: absolute
+					width: 20rem
+				.modal-text
+					margin-left: 500px
+					margin-top: -180px
+					max-width: 400px
+					line-height: 1.8
+					position: absolute
+				.modal-img
+					max-width: 450px
+					margin: 20px 0 20px 20px
+			.portafolio
+				overflow: auto
+				.portafoliotext
+					margin-top: -600px
+
+
+
+		//CONOCIMIENTO
+		.tecs
+			color: #fff
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			background: rgba(#737373 , .3)
+			border-radius: 7px
+			padding: 1.875rem 0 1.875rem 0
+			.tec
+				width: 200px
+				.name
+					font-size: 1.875rem
+					text-align: center
+				.icon
+					font-size: 3.125rem
+					text-align: center
+					display: block
+				.js
+					color: yellow
+				.ht
+					color: #F14A29
+				.css
+					color: #3B5998
+				.bt
+					color: #563d7c
+				.sass
+					color: #c6538c
+		//ACERCA DE MI
+		.me-container
+			.circle-img
+				width: 250px
+				margin: 2.875rem auto 2.875rem
+				transform: rotate(90deg)
+				img
+					width: 100%
+					border-radius: 3px
+					border: 1.25rem solid rgba(#737373 , .3)
+			.text
+				color: #fff
+				line-height: 1.8
+				text-align: justify
+		//CONTACTO
+		.social
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			margin-bottom: 1.875rem
+			.icon
+				text-decoration: none
+				font-size: 1.875rem
+				font-weight: 700
+				display: block
+				padding: 1.25rem
+				transition: 0.3s all ease
+			.linkedin
+				color: #495057
+			.linkedin:hover
+				color: #0077b5
+				background: rgba(#fff , .3)
+			.fiverr
+				font-weight: 700
+				color: 	#495057
+			.fiverr:hover
+				color: #00b22d
+				background: rgba(#fff , .3)
+			.freelancer
+				font-weight: 700
+				color: #495057
+			.freelancer:hover
+				color: #00aced
+				background: rgba(#fff , .3)
+			.facebook
+				color: #495057
+			.facebook:hover
+				color: #3b5998
+				background: rgba(#fff , .3)
+//FOOTER
+footer
+	p
+		font-size: 1.25rem
+		padding: 1.875rem 0 1.875rem 0
+		text-align: center
+		background: #f2f2f2

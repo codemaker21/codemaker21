@@ -1,0 +1,294 @@
+header .header-container {
+  background-image: url(../img/pexels-photo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat; }
+  header .header-container .head {
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    padding-top: 1.25rem; }
+    header .header-container .head .logo {
+      font-family: "Poiret One", cursive;
+      color: #fff;
+      font-size: 3rem;
+      margin-left: 1.25rem;
+      float: left; }
+    header .header-container .head ul {
+      float: right;
+      list-style: none;
+      margin-right: 1.875rem; }
+    header .header-container .head li {
+      display: inline-block; }
+      header .header-container .head li button {
+        cursor: pointer;
+        color: #fff;
+        border: none;
+        background: rgba(255, 255, 255, 0.05);
+        display: block;
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 300;
+        transition: 0.3s all ease;
+        padding: 1.25rem; }
+      header .header-container .head li button:focus {
+        outline: 0; }
+      header .header-container .head li button:hover {
+        background: rgba(255, 255, 255, 0.3); }
+  header .header-container .slogan {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: -3rem; }
+    header .header-container .slogan h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+      font-weight: 700; }
+    header .header-container .slogan p {
+      text-align: center;
+      width: 700px;
+      line-height: 1.4;
+      font-size: 1.125rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden; }
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+.main {
+  background: #000; }
+  .main .container h3 {
+    font-family: "Poiret One", cursive;
+    color: #fff;
+    font-size: 1.875rem;
+    margin: 1.875rem 0 1.875rem 0;
+    text-align: center; }
+  .main .container .jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .main .container .jobs .job {
+      margin: 1.875rem 0 1.875rem 0;
+      padding: 1.25rem;
+      background: rgba(115, 115, 115, 0.3);
+      border-radius: 5px; }
+      .main .container .jobs .job .title {
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+        text-align: center; }
+      .main .container .jobs .job .thumb {
+        width: 430px;
+        border-radius: 5px; }
+      .main .container .jobs .job .modal-btn {
+        display: block;
+        margin: 1.25rem auto;
+        padding: 1.25rem;
+        color: #fff;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        background: #000;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.3s all ease;
+        cursor: pointer; }
+      .main .container .jobs .job .modal-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        color: #000; }
+  .main .container .modal {
+    color: #fff;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .main .container .modal .modal-content {
+      background-color: #000;
+      margin: 8% auto;
+      width: 70%;
+      height: 340px;
+      animation-name: modalopen;
+      animation-duration: 1s;
+      position: relative; }
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+      .main .container .modal .modal-content span {
+        cursor: pointer;
+        font-size: 3.125rem;
+        float: right;
+        padding: 1.25rem; }
+      .main .container .modal .modal-content span:hover {
+        background: red;
+        background: rgba(115, 115, 115, 0.3); }
+      .main .container .modal .modal-content .modal-title {
+        font-size: 1.875rem;
+        margin: 1.25rem 58% 1.875rem;
+        position: absolute;
+        width: 20rem; }
+      .main .container .modal .modal-content .modal-text {
+        margin-left: 500px;
+        margin-top: -180px;
+        max-width: 400px;
+        line-height: 1.8;
+        position: absolute; }
+      .main .container .modal .modal-content .modal-img {
+        max-width: 450px;
+        margin: 20px 0 20px 20px; }
+    .main .container .modal .portafolio {
+      overflow: auto; }
+      .main .container .modal .portafolio .portafoliotext {
+        margin-top: -600px; }
+  .main .container .tecs {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgba(115, 115, 115, 0.3);
+    border-radius: 7px;
+    padding: 1.875rem 0 1.875rem 0; }
+    .main .container .tecs .tec {
+      width: 200px; }
+      .main .container .tecs .tec .name {
+        font-size: 1.875rem;
+        text-align: center; }
+      .main .container .tecs .tec .icon {
+        font-size: 3.125rem;
+        text-align: center;
+        display: block; }
+      .main .container .tecs .tec .js {
+        color: yellow; }
+      .main .container .tecs .tec .ht {
+        color: #F14A29; }
+      .main .container .tecs .tec .css {
+        color: #3B5998; }
+      .main .container .tecs .tec .bt {
+        color: #563d7c; }
+      .main .container .tecs .tec .sass {
+        color: #c6538c; }
+  .main .container .me-container .circle-img {
+    width: 250px;
+    margin: 2.875rem auto 2.875rem;
+    transform: rotate(90deg); }
+    .main .container .me-container .circle-img img {
+      width: 100%;
+      border-radius: 3px;
+      border: 1.25rem solid rgba(115, 115, 115, 0.3); }
+  .main .container .me-container .text {
+    color: #fff;
+    line-height: 1.8;
+    text-align: justify; }
+  .main .container .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1.875rem; }
+    .main .container .social .icon {
+      text-decoration: none;
+      font-size: 1.875rem;
+      font-weight: 700;
+      display: block;
+      padding: 1.25rem;
+      transition: 0.3s all ease; }
+    .main .container .social .linkedin {
+      color: #495057; }
+    .main .container .social .linkedin:hover {
+      color: #0077b5;
+      background: rgba(255, 255, 255, 0.3); }
+    .main .container .social .fiverr {
+      font-weight: 700;
+      color: #495057; }
+    .main .container .social .fiverr:hover {
+      color: #00b22d;
+      background: rgba(255, 255, 255, 0.3); }
+    .main .container .social .freelancer {
+      font-weight: 700;
+      color: #495057; }
+    .main .container .social .freelancer:hover {
+      color: #00aced;
+      background: rgba(255, 255, 255, 0.3); }
+    .main .container .social .facebook {
+      color: #495057; }
+    .main .container .social .facebook:hover {
+      color: #3b5998;
+      background: rgba(255, 255, 255, 0.3); }
+
+footer p {
+  font-size: 1.25rem;
+  padding: 1.875rem 0 1.875rem 0;
+  text-align: center;
+  background: #f2f2f2; }
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px; }
+    body header .header-container .head {
+      background: none; }
+      body header .header-container .head .logo {
+        text-align: center;
+        margin: 0;
+        float: none;
+        padding-bottom: 1.25rem; }
+      body header .header-container .head ul {
+        margin: 0 0 2rem 2.5rem;
+        float: none;
+        display: block; }
+      body header .header-container .head li {
+        display: block; }
+        body header .header-container .head li button {
+          font-size: 1.8rem !important;
+          background: none;
+          text-align: center;
+          margin: 0;
+          display: block; }
+    body header .header-container .slogan {
+      display: none; }
+    body .main .container {
+      width: 81%; }
+      body .main .container .jobs .job .thumb {
+        width: 250px; }
+      body .main .container .modal {
+        overflow: auto; }
+        body .main .container .modal .modal-content {
+          margin: 0 auto; }
+          body .main .container .modal .modal-content .modal-text {
+            margin: 0;
+            background: #000;
+            padding: 10px; }
+          body .main .container .modal .modal-content .modal-title {
+            margin: 0 0 0 1rem;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            max-width: 160px; }
+          body .main .container .modal .modal-content .modal-img {
+            width: 190px;
+            border-radius: 3px; }
+          body .main .container .modal .modal-content span {
+            padding: 0.8rem; }
+      body .main .container .tecs .tec {
+        margin-bottom: 2rem; } }
+
+/*# sourceMappingURL=style.css.map */
