@@ -193,8 +193,7 @@ body {
         color: #c6538c; }
   .main .container .me-container .circle-img {
     width: 250px;
-    margin: 2.875rem auto 2.875rem;
-    transform: rotate(90deg); }
+    margin: 2.875rem auto 2.875rem; }
     .main .container .me-container .circle-img img {
       width: 100%;
       border-radius: 3px;
@@ -210,7 +209,7 @@ body {
     margin-bottom: 1.875rem; }
     .main .container .social .icon {
       text-decoration: none;
-      font-size: 1.875rem;
+      font-size: 3.5rem;
       font-weight: 700;
       display: block;
       padding: 1.25rem;
@@ -220,23 +219,17 @@ body {
     .main .container .social .linkedin:hover {
       color: #0077b5;
       background: rgba(255, 255, 255, 0.3); }
-    .main .container .social .fiverr {
-      font-weight: 700;
-      color: #495057; }
-    .main .container .social .fiverr:hover {
-      color: #00b22d;
+    .main .container .social .gmail {
+      color: #495057;
+      text-align: center; }
+    .main .container .social .gmail:hover {
+      color: #e2e3e7;
       background: rgba(255, 255, 255, 0.3); }
-    .main .container .social .freelancer {
-      font-weight: 700;
-      color: #495057; }
-    .main .container .social .freelancer:hover {
-      color: #00aced;
-      background: rgba(255, 255, 255, 0.3); }
-    .main .container .social .facebook {
-      color: #495057; }
-    .main .container .social .facebook:hover {
-      color: #3b5998;
-      background: rgba(255, 255, 255, 0.3); }
+    .main .container .social .gmail-txt {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0 auto;
+      display: block; }
 
 footer p {
   font-size: 1.25rem;
