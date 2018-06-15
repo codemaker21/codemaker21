@@ -24,7 +24,7 @@ header .header-container {
         cursor: pointer;
         color: #fff;
         border: none;
-        background: rgba(255, 255, 255, 0.05);
+        background: none;
         display: block;
         text-decoration: none;
         font-size: 1.25rem;
@@ -159,11 +159,8 @@ body {
           color: #355B6B; }
       .main .container .modal .modal-content .modal-img {
         max-width: 450px;
+        max-height: 300px;
         margin: 20px 0 20px 20px; }
-    .main .container .modal .portafolio {
-      overflow: auto; }
-      .main .container .modal .portafolio .portafoliotext {
-        margin-top: -600px; }
   .main .container .tecs {
     color: #fff;
     display: flex;
@@ -284,6 +281,8 @@ footer p {
           body .main .container .modal .modal-content span {
             padding: 0.8rem; }
       body .main .container .tecs .tec {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem; }
+      body .main .container .social .gmail .gmail-txt {
+        font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

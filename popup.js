@@ -1,11 +1,11 @@
 var showJob1 = document.getElementById('modal-job1'),
 	showJob2 = document.getElementById('modal-job2'),
-	showJob3 = document.getElementById('modal-job3'),
 	showJob4 = document.getElementById('modal-job4'),
+	showJob5 = document.getElementById('modal-job5'),
 	btn1 = document.getElementById('btn1'),
 	btn2 = document.getElementById('btn2'),
-	btn3 = document.getElementById('btn3'),
-	btn4 = document.getElementById('btn4');
+	btn4 = document.getElementById('btn4'),
+	btn5 = document.getElementById('btn5');
 
 function mostrar1(){
 	showJob1.style.display = "block";
@@ -15,12 +15,13 @@ function mostrar2(){
 	showJob2.style.display = "block";
 }
 
-function mostrar3(){
-	showJob3.style.display = "block";
-}
 
 function mostrar4(){
 	showJob4.style.display = "block";
+}
+
+function mostrar5(){
+	showJob5.style.display = "block";
 }
 
 document.getElementById('closeBtn').addEventListener('click', function(){
@@ -31,18 +32,19 @@ document.getElementById('closeBtn2').addEventListener('click', function(){
 	showJob2.style.display = "none";
 })
 
-document.getElementById('closeBtn3').addEventListener('click', function(){
-	showJob3.style.display = "none";
-})
 
 document.getElementById('closeBtn4').addEventListener('click', function(){
 	showJob4.style.display = "none";
 })
 
+document.getElementById('closeBtn5').addEventListener('click', function(){
+	showJob5.style.display = "none";
+})
+
 btn1.addEventListener('click', mostrar1);
 btn2.addEventListener('click', mostrar2);
-btn3.addEventListener('click', mostrar3);
 btn4.addEventListener('click', mostrar4);
+btn5.addEventListener('click', mostrar5);
 
 
 
